@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupido Eventi |
+        <?php echo $title;?>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <?php echo $moreLinks;?>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <?php echo $content;?>
+    <img src="img/bgnobg.png" class="bg" alt="">
+    <section class="cards clearfix">
+        <!-- Cene con Delitto | Quiz | Cosa Facciomo | Pagina Eventi | Prenotazione On-Line | News Letter | Contattaci -->
+        <a href="/cenacondelitto.php">
+            <div class="cards_card">
+                <img src="" alt="Pic">
+                <h1 align="center">Cena con Delitto</h1>
+                <p></p>
+            </div>
+        </a>
+        <a href="/quiz.php">
+            <div class="cards_card">
+                <img src="" alt="Pic">
+                <h1 align="center">Quiz</h1>
+                <p></p>
+            </div>
+        </a>
+    </section>
+
+    <section class="cards clearfix">
+        <a href="/galleria.php">
+            <div class="cards_card">
+                <img src="" alt="Pic">
+                <h1 align="center">Galleria</h1>
+                <p></p>
+            </div>
+        </a>
+        <a href="/recensioni.php">
+            <div class="cards_card">
+                <img src="" alt="Pic">
+                <h1 align="center">Recensioni</h1>
+                <p></p>
+            </div>
+        </a>
+    </section>
+
+    <section class="cards clearfix">
+        <a href="/contatti.php">
+            <div class="cards_card last">
+                <img src="" alt="Pic">
+                <h1 align="center">Contattaci</h1>
+                <p></p>
+            </div>
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="contatti">
+            <h5>Contatti:</h5>
+            <p>Tel:<br>Cell: <a href="tel: +393337793214">+39 333 779 3214</a><br>Mail:
+                <a href="mailto: info@cupidoeventi.it">info@cupidoeventi.it</a><br></p>
+        </div>
+        <div class="sede">
+            <h5>Sede Legale:</h5>
+            <p>Cupido Eventi<br>Via Zampighi, 55 <br>41123, Modena<br>P. IVA: [........]</p>
+        </div>
+        <div class="square">
+            <a class="fb" href="https://www.facebook.com/cupidoeventiufficiale/">
+                <i class="fab fa-facebook-square fa-6x"></i>
+            </a>
+            <a class="ig" href="https://www.instagram.com/cupidoeventi.onetvemilia/">
+                <i class="fab fa-instagram-square fa-6x"></i>
+            </a>
+            <a class="tw" href="https://twitter.com/cupidoeventi1">
+                <i class="fab fa-twitter-square fa-6x"></i>
+            </a>
+            <a class="mail" href="mailto: info@cupidoeventi.it">
+                <i class="fas fa-envelope-square fa-6x"></i>
+            </a>
+        </div>
+
+        <div class="copy">
+            <hr>
+            <p align="center">&copy Web Development | 2020</p>
+        </div>
+    </footer>
+    <script>
+        function dynamicLayout() {
+            var browserWidth = getBrowserWidth();
+            //Carica le regole CSS per il layout stretto
+            if (browserWidth < 740) {
+                $(".fa-6x").toggleClass('fa-3x');
+                e.preventDefault();
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".header_icon-bar").click(function(e) {
+                $(".header_menu").toggleClass('is-open');
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
